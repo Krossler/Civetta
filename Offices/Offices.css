@@ -8,19 +8,9 @@
     user-select: none;
 }
 
-header{
-    display: flex;
-    height: 100vh;
-    background: url(./Components/Fondo.jpg);
-    background-position: bottom;
-    background-size: cover;
-    align-items: flex-end;
-    justify-content: center;
-}
-
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     font-weight: 400;
     transition: ease-in-out 0.2s;
 }
@@ -29,22 +19,19 @@ a:hover{
     text-shadow: 0px 0px 2px rgb(201, 201, 201);
 }
 
+header{
+    margin: 200px;
+    min-width: 300px;
+    margin-top: 200px;
+}
+
 .header-content{
-    margin-bottom: 150px;
-    color: whitesmoke;
-    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .header-content h2 {
     font-size: 4vmin;
-}
-
-.line {
-    width: 150px;
-    height: 4px;
-    background: rgb(202, 202, 202);
-    margin: 30px auto;
-    border-radius: 5px;
 }
 
 .header-content h1 {
@@ -68,7 +55,8 @@ a:hover{
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 ul{
@@ -76,16 +64,11 @@ ul{
 }
 
 .logo{
+    color: white;
     font-size: 1.8rem;
     font-family: "Cardo", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-.active1 {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    font-weight: bold;
 }
 
 .nav-links {
@@ -110,15 +93,22 @@ ul{
 
 @media only screen and (max-width:850px){
 
+    header{
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+
     #button{
         display: inherit;
     }
 
     .navbar{
         padding: 0;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .logo{
+        color: black;
         position: absolute;
         top: 30px;
         left: 30px;
@@ -132,6 +122,11 @@ ul{
         height: 600px;
         justify-content: center;
         backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    a{
+        color: black;
     }
 
     .nav-links.open {
