@@ -11,7 +11,7 @@
 header{
     display: flex;
     height: 100vh;
-    background: url(./Components/Fondo2.jpg);
+    background: url(./Components/Fondo.jpg);
     background-position: bottom;
     background-size: cover;
     align-items: flex-end;
