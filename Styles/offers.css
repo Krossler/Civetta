@@ -1,7 +1,3 @@
-header{
-    min-width: 300px;
-}
-
 .fondo{
     background: url(../Components/Imagenes/Fondos/Fondo5.jpg);
     background-position: center;
@@ -18,6 +14,7 @@ header{
 }
 
 .header-content{
+    margin-left: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -42,7 +39,4 @@ header h1{
 
 @media only screen and (max-width:850px){
 
-    header{
-        margin-left: 40px;
-    }
 }
