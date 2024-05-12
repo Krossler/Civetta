@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    user-select: none;
+}
+
+.header-page{
+    margin: 0px;
+}
+
+.fondo{
+    background: url(../Components/Imagenes/Fondos/Fondo5.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.logo-img{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.logo-products{
+    color: white;
+    font-size: 2em;
+    padding: 0px 0px 50px 0px;
+    margin: -100px 0px 0px 0px;
+    font-family: "Cardo", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    font-weight: 400;
+}
+
+section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+.product-div{
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.product-card{
+    max-width: 400px;
+    min-width: 200px;
+    background-color: rgb(238, 238, 238);
+    padding: 0em;
+    transition: ease-in-out 0.2s;
+}
+
+.product-card:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+.product-card .product-img{
+    max-width: 100%;
+}
+
+.product-card h4{
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card span{
+    font-size: 1.1em;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-card a{
+    font-weight: 400;
+    color: black;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.product-card a:hover{
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 0px black;
+}
+
+@media only screen and (max-width:850px){
+
+
+
+    header{
+        margin-top: 100px;
+    }
+
+}

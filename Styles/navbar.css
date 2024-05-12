@@ -6,45 +6,19 @@
     font-weight: 300;
     font-style: normal;
     user-select: none;
+    transition: 0.3s;
 }
 
-a{
+li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: 400;
     transition: ease-in-out 0.2s;
 }
 
-a:hover{
-    text-shadow: 0px 0px 2px rgb(201, 201, 201);
-}
-
-header{
-    margin: 200px;
-    min-width: 300px;
-    margin-top: 200px;
-}
-
-.header-content{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.header-content h2 {
-    font-size: 4vmin;
-}
-
-.header-content h1 {
-    font-size: 7vmin;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.ctn {
-    padding: 8px 15px;
-    background: rgb(150, 150, 150);
-    border-radius: 30px;
-    color: whitesmoke;
+li a:hover{
+    color: rgb(197, 241, 255);
+    text-shadow: 0px 0px 2px rgb(118, 246, 255);
 }
 
 .navbar {
@@ -53,10 +27,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    justify-content: space-between;
-    padding: 20px;
-    color: rgb(0, 0, 0);
-    background-color: black;
+    justify-content: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.185);
 }
 
 ul{
@@ -64,8 +38,10 @@ ul{
 }
 
 .logo{
-    color: white;
-    font-size: 1.8rem;
+    position: absolute;
+    left: 2%;
+    top: 18%;
+    font-size: 2.0rem;
     font-family: "Cardo", serif;
     font-weight: 400;
     font-style: normal;
@@ -91,11 +67,64 @@ ul{
     cursor: pointer;
 }
 
-@media only screen and (max-width:850px){
 
-    header{
-        margin-left: 40px;
-        margin-top: 100px;
+
+.icons{
+    position: absolute;
+    top: 12px;
+    left: 92%;
+}
+
+#whatsapp{
+    font-size: 1.6em;
+    margin-top: 8px;
+    transition: 0.4s ease-in-out;
+    padding-right: 15px;
+    color: white;
+}
+
+#whatsapp:hover{
+    color: rgb(0, 255, 0);
+    text-shadow: 0px 0px 2px rgb(158, 255, 145);
+}
+
+#instagram{
+    color: white;
+    font-size: 1.6em;
+    transition: 0.4s ease-in-out;
+}
+
+#instagram:hover{
+    color: rgb(255, 0, 212);
+    text-shadow: 0px 0px 2px rgb(255, 243, 73);
+}
+
+
+.ctn {
+    padding: 8px 15px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.ctn:hover {
+    padding: 8px 15px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width:1150px){
+
+    .icons{
+        position: absolute;
+        top: 90%;
+        left: 80%;
+    }
+    
+    #whatsapp{
+        padding-right: 10px;
     }
 
     #button{
@@ -104,14 +133,16 @@ ul{
 
     .navbar{
         padding: 0;
-        background-color: rgba(0, 0, 0, 0);
     }
 
     .logo{
-        color: black;
         position: absolute;
         top: 30px;
         left: 30px;
+    }
+
+    a{
+        color: black;
     }
 
     .nav-links {
@@ -122,11 +153,6 @@ ul{
         height: 600px;
         justify-content: center;
         backdrop-filter: blur(20px);
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    a{
-        color: black;
     }
 
     .nav-links.open {
@@ -145,7 +171,6 @@ ul{
 
     .nav-links li{
         margin: 30px auto;
-
     }
 
 }

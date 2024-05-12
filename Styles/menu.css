@@ -1,0 +1,48 @@
+
+header{
+    display: flex;
+    height: 100vh;
+    background: url(../Components/Imagenes/Fondos/Fondo6.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 90px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(202, 202, 202);
+    margin: 30px auto;
+    border-radius: 5px;
+    
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: rgb(150, 150, 150);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width:850px){
+
+
+}

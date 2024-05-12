@@ -1,0 +1,48 @@
+header{
+    min-width: 300px;
+}
+
+.fondo{
+    background: url(../Components/Imagenes/Fondos/Fondo5.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.logo-img{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.header-content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+header h1{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    font-weight: 400;
+}
+
+.logo-products{
+    color: white;
+    font-size: 2em;
+    padding: 0px 0px 50px 0px;
+    margin: -100px 0px 0px 0px;
+    font-family: "Cardo", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@media only screen and (max-width:850px){
+
+    header{
+        margin-left: 40px;
+    }
+}
