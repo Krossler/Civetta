@@ -30,9 +30,8 @@
         <ul class="nav-links">
             <li><a href="./index.html">HOME</a></li>
             <li><a href="./products.html">PRODUCTS</a></li>
-            <li><a href="./offers.html">OFFERS</a></li>
+            <li><a href="./offers.html">OFFICES</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
-            <li class="ctn"><a href="#">PRICE LIST</a></li>
             <div class="icons">
                 <a href="#"><i id="whatsapp" class="fa-brands fa-whatsapp"></i></a>
                 <a href="#"><i id="instagram" class="fa-brands fa-instagram"></i></a>
@@ -53,6 +52,8 @@
         </div>
     </header>
     <script>
+        const toggleMenu = document.querySelector(".btn")
+        const dropDownSubmenu = document.querySelector(".submenu")
         const toggleBtn = document.querySelector(".toggle_btn")
         const toggleBtnIcon = document.querySelector(".toggle_btn i")
         const dropDownMenu = document.querySelector(".nav-links")
@@ -65,6 +66,16 @@
             ? "fa-solid fa-bars-staggered"
             : "fa-solid fa-bars"
         }
+
+        toggleMenu.onclick = function () {
+            dropDownSubmenu.classList.toggle("open")
+            const isOpen = dropDownSubmenu.classList.contains("open")
+        }
+        
+    </script>
+
+    <script>
+        
     </script>
 </body>
 </html>
