@@ -121,13 +121,13 @@ section{
 }
 
 #btn1 {
-    background-color: white;
+    background-color: rgb(67, 80, 87);
+    color: rgb(231, 231, 231);
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
     cursor: pointer;
     display: inline-flex;
     font-size: 16px;
@@ -192,12 +192,30 @@ section{
     vertical-align: baseline;
 }
 
-#btn1:hover{
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(-1px);
+#btn3open {
+    background-color: rgb(67, 80, 87);
+    color: rgb(231, 231, 231);
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.25;
+    margin-inline: 5px;
+    min-height: 3rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    padding: 10px;
+    touch-action: manipulation;
+    vertical-align: baseline;
 }
+
 
 #btn2:hover{
     border-color: rgba(0, 0, 0, 0.15);
@@ -213,6 +231,19 @@ section{
     transform: translateY(-1px);
   }
 
+#btn3open:hover{
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(189, 236, 255, 0.65);
+  transform: translateY(-1px);
+}
+
+#btn1:hover{
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(189, 236, 255, 0.65);
+    transform: translateY(-1px);
+  } 
 .nuevosingresos{
     display: initial;
     transition: 0.4s ease;

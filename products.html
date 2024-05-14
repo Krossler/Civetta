@@ -101,40 +101,25 @@ crossorigin="anonymous">
             <h1>Pantalones</h1>
                 <section>
                     <div class="product-section">
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Camisa_lasuli.png" alt="Camisa"></a>
-                            <h4>RAM Blue Shirt</h4>
-                            <span>$22,599</span>
-                            <a href="#">More Information</a>
-                        </div>
-                    </div>
                 
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Pantalon_lasuli.png" alt="Pantalon"></a>
-                            <h4>RAM Blue Pants</h4>
-                            <span>$37,899</span>
-                            <a href="#">More Information</a>
+                        <div class="product-div">
+                            <div class="product-card">
+                                <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Pantalon_lasuli.png" alt="Pantalon"></a>
+                                <h4>RAM Blue Pants</h4>
+                                <span>$37,899</span>
+                                <a href="#">More Information</a>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Camisa_lasuli2.png" alt="Camisa"></a>
-                            <h4>RAM Blue Shirt</h4>
-                            <span>$22,599</span>
-                            <a href="#">More Information</a>
+                    
+                        <div class="product-div">
+                            <div class="product-card">
+                                <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Pantalon_cargo.png" alt="Pantalon"></a>
+                                <h4>RAM Blue Pants</h4>
+                                <span>$37,899</span>
+                                <a href="#">More Information</a>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Pantalon_cargo.png" alt="Pantalon"></a>
-                            <h4>RAM Blue Pants</h4>
-                            <span>$37,899</span>
-                            <a href="#">More Information</a>
-                        </div>
+
                     </div>
                 </section>
         </div>
@@ -143,40 +128,24 @@ crossorigin="anonymous">
             <h1>Remeras</h1>
                 <section>
                     <div class="product-section">
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Camisa_lasuli.png" alt="Camisa"></a>
-                            <h4>RAM Blue Shirt</h4>
-                            <span>$22,599</span>
-                            <a href="#">More Information</a>
+                        <div class="product-div">
+                            <div class="product-card">
+                                <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Camisa_lasuli.png" alt="Camisa"></a>
+                                <h4>RAM Blue Shirt</h4>
+                                <span>$22,599</span>
+                                <a href="#">More Information</a>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Pantalon_lasuli.png" alt="Pantalon"></a>
-                            <h4>RAM Blue Pants</h4>
-                            <span>$37,899</span>
-                            <a href="#">More Information</a>
+                    
+                        <div class="product-div">
+                            <div class="product-card">
+                                <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Camisa_lasuli2.png" alt="Camisa"></a>
+                                <h4>RAM Blue Shirt</h4>
+                                <span>$22,599</span>
+                                <a href="#">More Information</a>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Camisa_lasuli2.png" alt="Camisa"></a>
-                            <h4>RAM Blue Shirt</h4>
-                            <span>$22,599</span>
-                            <a href="#">More Information</a>
-                        </div>
-                    </div>
-                
-                    <div class="product-div">
-                        <div class="product-card">
-                            <a href="#"><img class="product-img" src="./Components/Imagenes/Products/Pantalon_cargo.png" alt="Pantalon"></a>
-                            <h4>RAM Blue Pants</h4>
-                            <span>$37,899</span>
-                            <a href="#">More Information</a>
-                        </div>
+
                     </div>
                 </section>
         </div>
@@ -194,7 +163,6 @@ crossorigin="anonymous">
 
             const toggleRe = document.querySelector("#btn3")
             const remeras = document.querySelector(".remeras")
-            
         
             toggleBtn.onclick = function () {
                 dropDownMenu.classList.toggle("open")
@@ -207,16 +175,35 @@ crossorigin="anonymous">
 
             toggleNi.onclick = function () {
                 
+                const paOpen = pantalones.classList.contains("open")
+                const reOpen = remeras.classList.contains("open")
                 const niOpen = nuevosIngresos.classList.contains("open")
                 
                 if (toggleRe.classList = remeras.classList.contains("open")){  
                     remeras.classList.toggle("open")
                     nuevosIngresos.classList.toggle("open")
+
+                    toggleRe.id = reOpen
+                    ? "btn3"
+                    : "btn3open"
+
+                    toggleNi.id = niOpen
+                    ? "btn1"
+                    : "btn3"
+
                 }
 
                 else if(togglePa.classList = pantalones.classList.contains("open")){
                     pantalones.classList.toggle("open")
                     nuevosIngresos.classList.toggle("open")
+
+                    toggleNi.id = niOpen
+                    ? "btn1"
+                    : "btn3"
+
+                    togglePa.id = paOpen
+                ? "btn3"
+                : "btn3open"
                 }
 
                 else {
@@ -226,32 +213,72 @@ crossorigin="anonymous">
 
             toggleRe.onclick = function () {
                 
+                const paOpen = pantalones.classList.contains("open")
                 const reOpen = remeras.classList.contains("open")
+                const niOpen = nuevosIngresos.classList.contains("open")
                 
                 if(togglePa.classList = pantalones.classList.contains("open")){
                     pantalones.classList.toggle("open")
                     remeras.classList.toggle("open")
+
+                    togglePa.id = paOpen
+                ? "btn3"
+                : "btn3open"
+
+                toggleRe.id = reOpen
+                    ? "btn3"
+                    : "btn3open"
                 }
                 else {
                     remeras.classList.toggle("open")
                     nuevosIngresos.classList.toggle("open")
+
+                    toggleRe.id = reOpen
+                    ? "btn3"
+                    : "btn3open"
+
+                    toggleNi.id = niOpen
+                    ? "btn1"
+                    : "btn3"
                 }
+            
             }
 
             togglePa.onclick = function () {
-                
+
+                const paOpen = pantalones.classList.contains("open")
                 const reOpen = remeras.classList.contains("open")
+                const niOpen = nuevosIngresos.classList.contains("open")
+                
                 if(toggleRe.classList = remeras.classList.contains("open")){
                     remeras.classList.toggle("open")
                     pantalones.classList.toggle("open")
+
+                    togglePa.id = paOpen
+                ? "btn3"
+                : "btn3open"
+
+                toggleRe.id = reOpen
+                    ? "btn3"
+                    : "btn3open"
                 }
                 else {
+                    
                     pantalones.classList.toggle("open")
                     nuevosIngresos.classList.toggle("open")
+
+                    togglePa.id = paOpen
+                ? "btn3"
+                : "btn3open"
+
+                toggleNi.id = niOpen
+                    ? "btn1"
+                    : "btn3"
                 }
+
+                
+
             }
-
-
 
         </script>
     </header>
