@@ -318,6 +318,18 @@ section{
         transition: 0.4s ease;
     }
 
+    .pantalones section{
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s ease;
+    }
+
+    .remeras section{
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s ease;
+    }
+
     section .card{
         margin-block: 20px;
     }
