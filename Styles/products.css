@@ -123,11 +123,10 @@ section{
 
 .buttons{
     position: absolute;
-    top: 50%;
+    top: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 20px;
 }
 
@@ -259,6 +258,7 @@ section{
     color: rgba(99, 99, 99, 0.65);
     transform: translateY(-1px);
   } 
+
 .nuevosingresos{
     display: initial;
     transition: 0.4s ease;
@@ -289,7 +289,7 @@ section{
     padding: 0px;
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1250px){
 
     .buttons{
         margin-top: 20px;
@@ -310,6 +310,16 @@ section{
     .logo-products{
         padding: 0px 0px 50px 0px;
         margin: -70px 0px 0px 0px;
+    }
+
+    .nuevosingresos section{
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s ease;
+    }
+
+    section .card{
+        margin-block: 20px;
     }
 
     header{

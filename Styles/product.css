@@ -6,7 +6,8 @@
 .card {
   width: 280px;
   background: #fff;
-  margin: 0 auto;
+  margin: 0;
+  margin-inline: 20px;
   margin-bottom: 10px;
 }
 
@@ -24,7 +25,7 @@
 .details h2 {
   font-size: 13px;
   font-weight: bold;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .details p, .details ul {
