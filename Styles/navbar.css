@@ -141,6 +141,7 @@ ul{
         height: 600px;
         justify-content: center;
         backdrop-filter: blur(20px);
+        transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
 
     .nav-links.open {
@@ -151,6 +152,7 @@ ul{
         justify-content: center;
         backdrop-filter: blur(20px);
         margin-top: 0px;
+        transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
 
     #button{
