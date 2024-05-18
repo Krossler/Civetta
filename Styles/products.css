@@ -39,8 +39,9 @@
 header h1{
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 30px auto;
     font-weight: 400;
+    font-size: 1.6rem;
 }
 
 section{
@@ -451,7 +452,7 @@ button {
     padding: 0px;
 }
 
-@media only screen and (max-width:1350px){
+@media only screen and (max-width:1400px){
 
     .buttons{
         margin-top: 20px;
@@ -477,19 +478,16 @@ button {
 
     .nuevosingresos section{
         display: flex;
-        flex-direction: column;
         transition: 0.4s ease;
     }
 
     .pantalones section{
         display: flex;
-        flex-direction: column;
         transition: 0.4s ease;
     }
 
     .remeras section{
         display: flex;
-        flex-direction: column;
         transition: 0.4s ease;
     }
 
@@ -774,11 +772,32 @@ button {
         text-align: center;
         text-transform: uppercase;
        }
+}
 
+@media only screen and (max-width:1000px){
+
+    .buttons{
+        margin-top: 20px;
+        margin-bottom: -20px;
+        flex-direction: initial;
+        align-items: center;
+        position: initial;
+    }
 
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:900px){
+
+    .nuevosingresos section{
+        flex-direction: column;
+    }
+
+    .remeras section{
+        flex-direction: column;
+    }
+    .pantalones section{
+        flex-direction: column;
+    }
 
     .buttons {
         flex-direction: column;
