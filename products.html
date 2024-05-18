@@ -50,9 +50,27 @@ crossorigin="anonymous">
             <h1 class="logo-products">Products</h1>
         </div>
         <div class="buttons">
-            <button id="btn1" class="btn01" role="button">Nuevos Ingresos</button>
-            <button id="btn2" class="btn02" role="button">Pantalones</button>
-            <button id="btn3" class="btn03" role="button">Remeras</button>
+            <button id="btn1" class="btn01">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Ingresos</span>
+              </button>
+
+              <button id="btn2" class="btn02">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Pantalones</span>
+              </button>
+
+              <button id="btn3" class="btn03">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Remeras</span>
+              </button>
+        
         </div>
 
         <div class="nuevosingresos">
@@ -372,7 +390,7 @@ crossorigin="anonymous">
 
                     toggleNi.id = niOpen
                     ? "btn1"
-                    : "btn3"
+                    : "btn3open"
 
                 }
 

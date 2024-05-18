@@ -131,134 +131,295 @@ section{
     padding: 20px;
 }
 
-#btn1 {
-    background-color: #dadddf;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    line-height: 1.25;
-    margin-inline: 5px;
-    min-height: 3rem;
+button {
     position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    padding: 10px;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    margin-bottom: 20px;
-}
-
-#btn2 {
-    background-color: white;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    display: inline-block;
     cursor: pointer;
-    display: inline-flex;
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    line-height: 1.25;
-    margin-inline: 5px;
-    min-height: 3rem;
-    position: relative;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
     text-decoration: none;
-    transition: all 250ms;
-    padding: 10px;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    margin-bottom: 20px;
-}
-
-#btn3 {
-    background-color: white;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    line-height: 1.25;
-    margin-inline: 5px;
-    min-height: 3rem;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 10px;
+   }
+   
+   #btn1 {
+    width: 14rem;
+    height: auto;
+   }
+   
+   #btn1 .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    padding: 10px;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    margin-bottom: 20px;
-}
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   #btn1 .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   #btn1 .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+    transform: translate(1rem, 0);
+   }
+   
+   #btn1 .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   #btn1 .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
 
-#btn3open {
-    background-color: #dadddf;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    line-height: 1.25;
-    margin-inline: 5px;
-    min-height: 3rem;
+
+   #btn2 {
+    width: 14rem;
+    height: auto;
+   }
+   
+   #btn2 .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    padding: 10px;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    margin-bottom: 20px;
-}
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   #btn2 .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   #btn2 .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   #btn2 .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   #btn2 .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   #btn2:hover .circle {
+    width: 100%;
+   }
+   
+   #btn2:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   #btn2:hover .button-text {
+    color: #fff;
+   }
 
+   #btn3 {
+    width: 14rem;
+    height: auto;
+   }
+   
+   #btn3 .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   #btn3 .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   #btn3 .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   #btn3 .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   #btn3 .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   #btn3:hover .circle {
+    width: 100%;
+   }
+   
+   #btn3:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   #btn3:hover .button-text {
+    color: #fff;
+   }
 
-#btn2:hover{
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(-1px);
-  }
+   /* Cambio de pagina*/
 
-#btn3:hover{
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(-1px);
-  }
-
-#btn3open:hover{
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(143, 143, 143, 0.65);
-  transform: translateY(-1px);
-}
-
-#btn1:hover{
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(99, 99, 99, 0.65);
-    transform: translateY(-1px);
-  } 
+   #btn3open {
+    width: 14rem;
+    height: auto;
+   }
+   
+   #btn3open .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   #btn3open .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   #btn3open .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+    transform: translate(1rem, 0);
+   }
+   
+   #btn3open .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   #btn3open .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
 
 .nuevosingresos{
     display: initial;
@@ -295,8 +456,9 @@ section{
     .buttons{
         margin-top: 20px;
         margin-bottom: -20px;
-        position: initial;
         flex-direction: initial;
+        align-items: center;
+        position: initial;
     }
 
     .logo-img{
@@ -338,5 +500,459 @@ section{
     header{
         margin-top: 100px;
     }
+
+    /*buttons*/
+
+        #btn2, #btn3 {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn2, #btn3 .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn2, #btn3 .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn3 .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: -0.05rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+       }
+       
+       #btn2, #btn3 .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn2, #btn3 .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.3rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #282936;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+       
+       #btn2, #btn3:hover .circle {
+        width: 100%;
+       }
+       
+       #btn2, #btn3:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(0.2rem, 0);
+       }
+       
+       #btn2, #btn3:hover .button-text {
+        color: #fff;
+       }
+
+       #btn1 {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn1 .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn1 .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn1 .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.225rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+        transform: translate(0.2rem, 0);
+       }
+       
+       #btn1 .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn1 .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.3rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+
+       #btn3open {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn3open .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn3open .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn3open .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: -0.05rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+
+       }
+       
+       #btn3open .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn3open .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.3rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+
+
+}
+
+@media only screen and (max-width:500px){
+
+    .buttons{
+        margin-top: 20px;
+        margin-bottom: -20px;
+        flex-direction: initial;
+        align-items: center;
+        position: initial;
+    }
+
+    .logo-img{
+        max-width: 90%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .logo-products{
+        padding: 0px 0px 50px 0px;
+        margin: -70px 0px 0px 0px;
+    }
+
+    .nuevosingresos section{
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s ease;
+    }
+
+    .pantalones section{
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s ease;
+    }
+
+    .remeras section{
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s ease;
+    }
+
+    section .card{
+        margin-block: 20px;
+    }
+
+    header{
+        margin-top: 100px;
+    }
+
+    /*buttons*/
+
+        #btn2, #btn3 {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn2, #btn3 .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn2, #btn3 .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn3 .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: -0.05rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+       }
+       
+       #btn2, #btn3 .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn2, #btn3 .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.35rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #282936;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+       
+       #btn2, #btn3:hover .circle {
+        width: 100%;
+       }
+       
+       #btn2, #btn3:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(0.2rem, 0);
+       }
+       
+       #btn2, #btn3:hover .button-text {
+        color: #fff;
+       }
+
+       #btn1 {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn1 .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn1 .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn1 .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.225rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+        transform: translate(0.2rem, 0);
+       }
+       
+       #btn1 .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn1 .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.35rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+
+       #btn3open {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn3open .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn3open .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn3open .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: -0.05rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+
+       }
+       
+       #btn3open .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn3open .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.35rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+
 
 }
