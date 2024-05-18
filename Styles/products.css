@@ -123,7 +123,7 @@ section{
 
 .buttons{
     position: absolute;
-    top: 450px;
+    top: 500px;
     left: 40px;
     display: flex;
     flex-direction: column;
@@ -156,8 +156,8 @@ button {
     position: relative;
     display: block;
     margin: 0;
-    width: 100%;
-    height: 3rem;
+    width: 80%;
+    height: 2.6rem;
     background: #282936;
     border-radius: 1.625rem;
    }
@@ -199,10 +199,10 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 0.55rem 0;
+    margin: 0 0 0 0.5rem;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
@@ -219,8 +219,8 @@ button {
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
     background: #282936;
     border-radius: 1.625rem;
    }
@@ -261,17 +261,17 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 0.55rem 0;
+    margin: 0 0 0 0.5rem;
     color: #282936;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
    }
    
    #btn2:hover .circle {
-    width: 100%;
+    width: 80%;
    }
    
    #btn2:hover .circle .icon.arrow {
@@ -293,8 +293,8 @@ button {
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
     background: #282936;
     border-radius: 1.625rem;
    }
@@ -335,17 +335,17 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 0.55rem 0;
+    margin: 0 0 0 0.5rem;
     color: #282936;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
    }
    
    #btn3:hover .circle {
-    width: 100%;
+    width: 80%;
    }
    
    #btn3:hover .circle .icon.arrow {
@@ -369,8 +369,8 @@ button {
     position: relative;
     display: block;
     margin: 0;
-    width: 100%;
-    height: 3rem;
+    width: 80%;
+    height: 2.6rem;
     background: #282936;
     border-radius: 1.625rem;
    }
@@ -412,10 +412,10 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 0.55rem 0;
+    margin: 0 0 0 0.5rem;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
@@ -503,12 +503,12 @@ button {
 
     /*buttons*/
 
-        #btn2, #btn3 {
+        #btn2 {
         width: 14rem;
         height: auto;
        }
        
-       #btn2, #btn3 .circle {
+       #btn2 .circle {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: relative;
         display: block;
@@ -519,7 +519,81 @@ button {
         border-radius: 1.625rem;
        }
        
-       #btn2, #btn3 .circle .icon {
+       #btn2 .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn2 .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: -0.05rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+       }
+       
+       #btn2 .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn2 .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.3rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #282936;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+       
+       #btn2:hover .circle {
+        width: 100%;
+       }
+       
+       #btn2:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(0.2rem, 0);
+       }
+       
+       #btn2:hover .button-text {
+        color: #fff;
+       }
+
+       #btn2 {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn3 .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn3 .circle .icon {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -535,7 +609,7 @@ button {
         background: none;
        }
        
-       #btn2, #btn3 .circle .icon.arrow::before {
+       #btn3 .circle .icon.arrow::before {
         position: absolute;
         content: "";
         top: -0.29rem;
@@ -547,7 +621,7 @@ button {
         transform: rotate(45deg);
        }
        
-       #btn2, #btn3 .button-text {
+       #btn3 .button-text {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -558,22 +632,22 @@ button {
         margin: 0 0 0 1.85rem;
         color: #282936;
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.6;
         text-align: center;
         text-transform: uppercase;
        }
        
-       #btn2, #btn3:hover .circle {
+       #btn3:hover .circle {
         width: 100%;
        }
        
-       #btn2, #btn3:hover .circle .icon.arrow {
+       #btn3:hover .circle .icon.arrow {
         background: #fff;
         transform: translate(0.2rem, 0);
        }
        
-       #btn2, #btn3:hover .button-text {
+       #btn3:hover .button-text {
         color: #fff;
        }
 
@@ -633,7 +707,7 @@ button {
         margin: 0 0 0 1.85rem;
         color: #ffffff;
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.6;
         text-align: center;
         text-transform: uppercase;
@@ -695,7 +769,7 @@ button {
         margin: 0 0 0 1.85rem;
         color: #ffffff;
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.6;
         text-align: center;
         text-transform: uppercase;
@@ -706,44 +780,8 @@ button {
 
 @media only screen and (max-width:500px){
 
-    .buttons{
-        margin-top: 20px;
-        margin-bottom: -20px;
-        flex-direction: initial;
-        align-items: center;
-        position: initial;
-    }
-
-    .logo-img{
-        max-width: 90%;
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        margin: 0px auto;
-        padding: 20px 0px 0px 0px;
-    }
-
-    .logo-products{
-        padding: 0px 0px 50px 0px;
-        margin: -70px 0px 0px 0px;
-    }
-
-    .nuevosingresos section{
-        display: flex;
+    .buttons {
         flex-direction: column;
-        transition: 0.4s ease;
-    }
-
-    .pantalones section{
-        display: flex;
-        flex-direction: column;
-        transition: 0.4s ease;
-    }
-
-    .remeras section{
-        display: flex;
-        flex-direction: column;
-        transition: 0.4s ease;
     }
 
     section .card{
@@ -756,12 +794,12 @@ button {
 
     /*buttons*/
 
-        #btn2, #btn3 {
+        #btn3 {
         width: 14rem;
         height: auto;
        }
        
-       #btn2, #btn3 .circle {
+       #btn3 .circle {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: relative;
         display: block;
@@ -772,7 +810,7 @@ button {
         border-radius: 1.625rem;
        }
        
-       #btn2, #btn3 .circle .icon {
+       #btn3 .circle .icon {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -788,7 +826,7 @@ button {
         background: none;
        }
        
-       #btn2, #btn3 .circle .icon.arrow::before {
+       #btn3 .circle .icon.arrow::before {
         position: absolute;
         content: "";
         top: -0.29rem;
@@ -800,7 +838,7 @@ button {
         transform: rotate(45deg);
        }
        
-       #btn2, #btn3 .button-text {
+       #btn3 .button-text {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -811,22 +849,96 @@ button {
         margin: 0 0 0 1.85rem;
         color: #282936;
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.6;
         text-align: center;
         text-transform: uppercase;
        }
        
-       #btn2, #btn3:hover .circle {
+       #btn3:hover .circle {
         width: 100%;
        }
        
-       #btn2, #btn3:hover .circle .icon.arrow {
+       #btn3:hover .circle .icon.arrow {
         background: #fff;
         transform: translate(0.2rem, 0);
        }
        
-       #btn2, #btn3:hover .button-text {
+       #btn3:hover .button-text {
+        color: #fff;
+       }
+
+    #btn2 {
+        width: 14rem;
+        height: auto;
+       }
+       
+       #btn2 .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        background: #282936;
+        border-radius: 1.625rem;
+       }
+       
+       #btn2 .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        background: #fff;
+       }
+       
+       #btn2 .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: -0.05rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+       }
+       
+       #btn2 .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0425rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       #btn2 .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.35rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #282936;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+       }
+       
+       #btn2:hover .circle {
+        width: 100%;
+       }
+       
+       #btn2:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(0.2rem, 0);
+       }
+       
+       #btn2:hover .button-text {
         color: #fff;
        }
 
@@ -886,7 +998,7 @@ button {
         margin: 0 0 0 1.85rem;
         color: #ffffff;
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.6;
         text-align: center;
         text-transform: uppercase;
@@ -948,7 +1060,7 @@ button {
         margin: 0 0 0 1.85rem;
         color: #ffffff;
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.6;
         text-align: center;
         text-transform: uppercase;
