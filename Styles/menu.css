@@ -36,6 +36,14 @@ header{
     background: rgb(66, 66, 66);
     margin: 30px auto;
     border-radius: 5px;
+}
+
+.line3 {
+    width: 200px;
+    height: 4px;
+    background: rgb(226, 226, 226);
+    margin: 30px auto;
+    border-radius: 5px;
     
 }
 
@@ -58,7 +66,7 @@ header{
 .header-content .ctn:hover{
     color: rgb(197, 241, 255);
     background-color: rgb(104, 104, 104);
-    text-shadow: 0px 0px 2px rgb(118, 246, 255)
+    text-shadow: 0px 0px 2px rgb(118, 246, 255);
 }
 
 .arrow{
@@ -81,16 +89,19 @@ header{
   }
 
 .menu2 {
-    width: 80%;
-    margin: 80px auto;
+    width: 100%;
+    margin: 0px auto;
 }
 
 .title {
     text-align: center;
-    font-size: 4vmin;
+    font-size: 3vmin;
     margin-top: 30px;
     margin-bottom: 30px;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.342);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .row{
@@ -115,6 +126,16 @@ header{
     border: 4px solid  rgb(126, 147, 206);
 }
 
+img:hover{
+    width: 512px;
+    height: 264px;
+    box-shadow: 0px 0px 8px rgb(255, 180, 19);
+    border: 4px solid  rgb(255, 187, 86);
+    filter: grayscale(60%);
+    content: 'Home';
+    
+}
+
 .col h2{
     margin-top: 20px;
     margin-bottom: 40px;
@@ -128,10 +149,50 @@ header{
 }
 
 
+
+#title2 {
+    margin-block: 110px;
+}
+
+.bg3{
+    background-image: url(../Components/Imagenes/Fondos/mercadolibre.jpeg);
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    padding-block: 1px;
+    margin-inline: 0px;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.h1envio{
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.title p{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-weight: 300;
+}
+
 @media only screen and (max-width:1250px){
     
     header{
         height: 95vh;
+    }
+
+    .h1envio{
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 15px rgb(0, 0, 0);
+        font-weight: 400;
     }
 
     .row{
@@ -146,6 +207,16 @@ header{
         width: 384px;
         height: 190px;
     }
+
+    .title p{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 600px;
+        color: white;
+        font-weight: 300;
+    }
     
 }
 
@@ -154,6 +225,13 @@ header{
     .col img{
         width: 268px;
         height: 133px;
+    }
+
+    .title p{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
     }
     
 }

@@ -30,7 +30,7 @@
   }
   
   .footer__addr {
-    margin-right: 1.25em;
+    margin-right: 0.7em;
     margin-bottom: 2em;
   }
   
@@ -41,7 +41,8 @@
     margin: 0px;
     padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    text-align: end;
     font-weight: 400;
     font-size: 1.6rem;
   }
