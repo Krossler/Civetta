@@ -48,7 +48,7 @@
   color: #000;
 }
 
-.blue, .red, .white, .black {
+.blue, .marron, .white, .black {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -63,9 +63,9 @@
   border: 1px solid #4b8cd8;
 }
 
-.red {
-  background: #eb5b5b;
-  border: 1px solid #eb5b5b;
+.marron {
+  background: #ac935c;
+  border: 1px solid #ac935c;
 }
 
 .white {
