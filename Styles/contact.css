@@ -1,0 +1,112 @@
+.fondo{
+    background: url(../Components/Imagenes/Fondos/Fondo5.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    box-shadow: 0px 1px 20px black;
+}
+
+.logo-img{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.header-content p{
+    font-size: 18px;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-weight: 400;
+}
+
+.logo-products{
+    color: white;
+    font-size: 2em;
+    padding: 0px 0px 50px 0px;
+    margin: -80px 0px 0px 0px;
+    font-family: "Cardo", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:1px solid #080c0e;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.feedback-input:focus { 
+    border:1px solid #578094;    
+}
+
+.feedback-input:hover{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.473);
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    background:#080c0e;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+[type="submit"]:hover { 
+    background:#000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.473);
+}
+
+@media only screen and (max-width:1400px){
+
+    .logo-img{
+        max-width: 90%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .logo-products{
+        padding: 0px 0px 50px 0px;
+        margin: -70px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    form { max-width:320px; margin:50px auto; }
+
+}

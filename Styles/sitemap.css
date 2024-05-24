@@ -12,16 +12,17 @@ section{
     background-color: rgb(24, 24, 24);
     background-size: cover;
     display: flex;
-    height: 100vh;
-    min-width: 800px;
+    height: 100%;
+    min-width: 40%;
     margin: 0 auto;
+    padding-inline: 20px;
 }
 
 .container{
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;;
 }
 
 h2{
@@ -37,4 +38,6 @@ h1{
     color: rgb(156, 241, 27);
     font-size: 24px;
     font-weight: 400;
+    margin-left: -180px;
+    margin-bottom: 100px;
 }
